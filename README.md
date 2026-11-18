@@ -22,8 +22,6 @@ LCD menampilkan rata-rata BPM beserta kategorinya (mis. "Baik").
 Sensor, OLED, dan LCD berbagi satu jalur I2C (SDA = A4, SCL = A5 pada Uno), masing-masing dengan alamat
 berbeda. Lihat skema di bawah; periksa juga tegangan kerja tiap modul sebelum dinyalakan.
 
-![Rangkaian virtual](docs/rangkaian-virtual.jpg)
-
 ## Cara kerja
 
 1. Sensor dibaca terus-menerus. Nilai IR di atas 7000 berarti ada jari.
@@ -35,7 +33,7 @@ berbeda. Lihat skema di bawah; periksa juga tegangan kerja tiap modul sebelum di
 
 | Blok diagram | Flowchart |
 |---|---|
-| ![Blok diagram](docs/blok-diagram.png) | ![Flowchart](docs/flowchart.png) |
+| ![Blok diagram](docs/rangkaian-virtual.jpg) | ![Flowchart](docs/flowchart.png) |
 
 Blok diagram dan flowchart berasal dari rancangan awal yang juga memuat modul Wi-Fi ESP8266 dan
 ThingSpeak. **Fitur pengiriman data itu belum aktif di kode ini.**
